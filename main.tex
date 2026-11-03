@@ -77,37 +77,51 @@ The present study builds on this literature by examining the robot's presence du
 \label{sec:methods}
 % Deliverable 2: expand this section and update GenAI Use.
 
-\subsection{Study Records}
-\placeholder{AsPredicted URL; IRB number; data folder URL.}
-% The course page specifies UChicago SBS IRB and UChicago Box despite
-% being a KU course. Confirm the applicable institution with the instructor.
-\draftspace{20mm}
-
 \subsection{Research Questions and Hypotheses}
-\placeholder{RQ1; H1.}
-\draftspace{25mm}
+This study aims to determine if the physical presence of a robot during the post-interaction survey phase alters the validity of user sentiment data. Specifically, we investigate whether the robot's presence induces social pressure or artifact-induced effects that compromise the candid nature of debriefing. The primary research question is whether the post-interaction interview results change amongst respondents when the robot is physically present versus absent.
 
-\subsection{Experimental Design and Conditions}
-\placeholder{Conditions, assignment, and ordering.}
-\draftspace{25mm}
+\subsection{Experimental Conditions}
+The study utilizes a controlled between-subjects design with two distinct conditions. Participants are randomly assigned to one of two test groups.
+\begin{itemize}
+    \item \textbf{Robot Present:} Participants complete the post-survey questionnaire with the Nao robot turned on and physically present in the interview room.
+    \item \textbf{Robot Absent:} Participants complete the post-survey questionnaire in the robot's absence (removed from the room).
+\end{itemize}
+All participants experience the same interaction activity conducted via Wizard of Oz (WoZ) to ensure consistency in the experience.
 
-\subsection{Interaction Context and Robot Implementation}
-\placeholder{Task, robot behavior, and public code repository URL.}
-\draftspace{25mm}
-\draftpage
+\subsection{Interaction Context/Task Description}
+Participants engage in a \textbf{Trivia Game} activity controlled via WoZ to ensure standardized interaction dynamics. The robot provides input to the user for questions asked by the researcher. During this phase, the robot answers questions following a specific pattern for the accuracy to simulate interaction: \textit{correct, correct, correct, wrong, correct, wrong, wrong}.
+
+\subsection{Details on Robot Implementation}
+The study utilizes a \textbf{Nao robot} to serve as the social agent in the interaction. The robot code is open-sourced for reproducibility. The implementation details and source code are available via the following GitHub repository:
+\begin{verbatim}
+https://github.com/phsadhankar/say-it-to-my-face
+\end{verbatim}
 
 \subsection{Experimental Protocol}
-\placeholder{Participant steps.}
-\draftspace{40mm}
+The experimental protocol follows a standardized sequence.
+\begin{enumerate}
+    \item Participants undergo the trivia game activity controlled via WoZ.
+    \item Participants then complete the same post-interaction questionnaire independently through Qualtrics. The questionnaire evaluates the robot based on likability, competence, trustworthiness, comfort, and overall interaction quality, as well as willingness to interact again.
+    \subitem The questionnaire is designed not to mention the presence or absence of the robot to avoid influencing responses.
+    \item Finally, an interview is conducted to allow participants to express their feelings regarding the experiment, specifically regarding the robot's presence or absence.
+\end{enumerate}
 
 \subsection{Measures}
-\placeholder{Outcomes, instruments, and citations.}
-\draftspace{40mm}
+Data collection focuses on robot evaluation and user sentiment.
+\begin{itemize}
+    \item \textbf{Robot Evaluation:} Likert-scale ratings are collected for how likable, competent, and trustworthy the robot is, along with the overall quality of the interaction.
+    \item \textbf{Open-Ended Responses:} Participants answer open-ended questions about what they liked, disliked, and would change about the interaction.
+    \item \textbf{Theoretical Framework:} Physical presence is distinguished from perceived social presence, acknowledging that an activated NAO facing the participant might be perceived as socially available due to anthropomorphism.
+\end{itemize}
 
-\subsection{Participants}
-\placeholder{Counts per condition and demographics.}
-\draftspace{30mm}
-\draftpage
+\subsection{Participant Information}
+The study employs a between-subjects design where each participant is randomly assigned to one of the test groups. Random assignments distribute participants based on demographic factors evenly into the study to minimize bias.
+
+\subsection{Study Records}
+\begin{itemize}
+    \item \textbf{Preregistration:} Link to the AsPredicted preregistration: \url{[https://aspredicted.org/xm6me9.pdf]}
+    \item \textbf{Data Repository:} Link to the folder containing all data (video, questionnaire, etc.): \url{[https://drive.google.com/drive/folders/1uX_Um-HWyyjwb2Lpy_1xB3988VBj422I?usp=sharing]}
+\end{itemize}
 
 \section{Results}
 \label{sec:results}
